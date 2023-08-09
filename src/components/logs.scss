@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "../variables.scss";
+
+.container {
+  display: flex;
+  > .chart-container {
+    width: 87%;
+    padding: 3rem;
+    background-color: $main-white;
+    .ui {
+      &.segment {
+        padding: 0 !important;
+      }
+    }
+    .first-charts {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px solid $divider;
+      > .echarts-for-react {
+        width: 413px !important;
+        height: 313px !important;
+      }
+      > .ui {
+        &.large {
+          > .value {
+            color: $main-black !important;
+          }
+          > .label {
+            color: $main-black !important;
+          }
+        }
+      }
+    }
+    .secondary-charts {
+      display: flex;
+      > .response-time {
+        width: 50%;
+        padding-left: 1rem;
+        > .infos {
+          padding: 1rem;
+          > .response-title {
+            font-family: $font-title !important;
+            color: $main-black !important;
+            font-weight: 600;
+            font-size: 1.5rem;
+          }
+          > .ui {
+            &.statistics {
+              margin: 0 !important;
+            }
+          }
+        }
+        > .response-chart-first {
+          display: flex;
+          gap: 15px;
+        }
+        .echarts-for-react {
+          width: 413px !important;
+          height: 313px !important;
+          &.line {
+            width: 100% !important;
+            height: 513px !important;
+          }
+        }
+        border-right: 1px solid $divider;
+      }
+      > .content-lenght {
+        width: 50%;
+        padding-right: 1rem;
+        > .infos {
+          padding: 1rem;
+          > .content-title {
+            font-family: $font-title !important;
+            color: $main-black !important;
+            font-weight: 600;
+            font-size: 1.5rem;
+          }
+          > .ui {
+            &.statistics {
+              margin: 0 !important;
+            }
+          }
+        }
+        > .content-chart-first {
+          display: flex;
+          gap: 15px;
+        }
+        .echarts-for-react {
+          width: 413px !important;
+          height: 313px !important;
+          &.line {
+            width: 100% !important;
+            height: 513px !important;
+          }
+        }
+      }
+    }
+  }
+}
